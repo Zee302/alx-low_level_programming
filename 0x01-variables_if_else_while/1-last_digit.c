@@ -3,29 +3,30 @@
 #include <stdio.h>
 
 /**
-*main-Determine if number is greater than 5,is less than 6,or is 0
-*
+*main - main block
+*Description - Get a random number abd check its last digit, compare it with 5
 *Return - Always 0 (Success)
 */
 int main(void)
 {
-int n, 1;
+int n;
+int last;
 
 srand(time(0));
 n = rand() - RAND_MAX / 2;
-1 = n % 10;
+last = n % 10
 
-if (1 > 5)
+if (last > 5)
 {
-printf("Last digit of %d is %d and is greater than 5\n", n, 1);
+printf("Last digit of %i is %i and is greater than 5\n", n, last);
 }
-else if (1 == 0)
+else if (last == 0)
 {
-printf("Last digit of %d is %d and is 0\n", n, 1);
+printf("Last digit of %i is %i and is 0\n", n, last);
 }
-else
+else if (last < 6)
 {
-printf("Last digit of %d is %d and is less than 6 and not 0\n", n, 1);
+printf("Last digit of %i is %i and is less than 6 and not 0\n", n, last);
 }
 return (0);
 }
