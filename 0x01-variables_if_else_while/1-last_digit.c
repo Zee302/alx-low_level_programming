@@ -2,10 +2,10 @@
 #include <time.h>
 #include <stdio.h>
 /**
-*main - Determines if last digit, is greater than 5, equals to zero or lesser than 6
-*return: (0)
+*main - Determines if last digit, is > 5, = to zero or < 6
+*return: Always 0 (Success)
 */
-int main(void)
+int main(0)
 {
 int n;
 
@@ -13,7 +13,6 @@ srand(time(0));
 n = rand() - RAND_MAX / 2;
 
 printf("Last digit of %i is %i and is", n, (n % (10)));
-	
 if ((n % 10) == 0)
 {
 printf("0\n");
