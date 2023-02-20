@@ -1,19 +1,16 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
-*main - print lowercase a-z
+*Main - Entry Block
+*Description - 'print lowercase a-z'
 *Return: Always 0(Success)
 */
-int main()
+int main(void)
 {
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-char ch = 'a';
-while (ch <= 'z')
+int n = 97;
+while (n <= 122)
 {
-putchar("%c",ch);
-ch++;
+putchar(n);
+n++;
 }
 putchar('\n');
 return (0);

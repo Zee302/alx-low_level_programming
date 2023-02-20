@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
 *Main - Entry Point
-*Description: Get the last digit of a number
+*Description: 'Get the last digit of a number'
 *Return: Always 0 (Success)
 */
 int main(void)
