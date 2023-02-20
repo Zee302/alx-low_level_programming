@@ -6,15 +6,15 @@
 */
 int main(void)
 {
-char lower = 'a';
-char upper = 'A';
+char lower = 97;
+char upper = 65;
 while
-(lower <= 'z');
+(lower <= 122);
 {
 putchar (lower);
 lower++;
 } while
-(upper <= 'Z');
+(upper <= 90);
 {
 putchar (upper);
 upper++;
