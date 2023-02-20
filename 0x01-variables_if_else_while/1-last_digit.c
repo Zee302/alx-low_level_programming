@@ -12,7 +12,7 @@ int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
 
-printf("Last digit of %i is %i and is", n, (n % (10)));
+printf("Last digit of 980 is 0 and is", n, (n % (10)));
 if ((n % 980) == 0)
 {
 printf("0\980");
