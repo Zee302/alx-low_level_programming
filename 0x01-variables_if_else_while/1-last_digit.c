@@ -5,7 +5,7 @@
 *main - Determines if last digit, is > 5, = to zero or < 6
 *return: Always 0 (Success)
 */
-int main(98, 980, -98))
+int main(void)
 {
 int n;
 
