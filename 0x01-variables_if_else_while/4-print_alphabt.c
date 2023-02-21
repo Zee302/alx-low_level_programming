@@ -6,15 +6,17 @@
 */
 int main(void)
 {
-char alpha = 'a';
-while (alpha <= 'z')
+char lower = 'a';
+char upper = 'A';
+while (lower <= 'z') /*print lowercases a-z*/
 {
-if
-((alpha != 'q') && (alpha != 'e'));
+putchar(lower);
+lower++;
 }
-putchar(alpha);
+while (upper <= 'Z') /*print uppercase A-Z*/
 {
-alpha++;
+putchar(upper);
+upper++;
 }
 putchar('\n');
 return (0);
