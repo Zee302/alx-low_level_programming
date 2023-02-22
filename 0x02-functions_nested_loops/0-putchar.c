@@ -1,9 +1,10 @@
 #include "main.h"
+#include <stdio.h>
 /**
-*Main - Print _putchar, followed by a new line
-*Return : 0
-/* Function returning _putchar*/
-int print(_putchar)
+*Main - Print "_putchar", followed by a new line
+*Return : Always 0
+/*Function returning _putchar*/
+void putchar("%s", char *s);
 {
 _putchar('_');
 _putchar('p');
