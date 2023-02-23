@@ -9,29 +9,16 @@
 int main(void)
 {
 int i;
-i = 1;
-while (i <= 100)
+for (i = 1; i <= 100; i++)
+if (i%15 == 0)
 {
-if (i % 3 == 0 && i % 5 == 0)
-{
-_putchar("FizzBuzz");
-}
-else if (i % 3 == 0)
-{
+_putchar ("FizzBuzz")
+else if ((i % 3) == 0)
 _putchar("Fizz");
-}
-else if (i % 5 == 0)
-{
+else if ((i % 5) == 0)
 _putchar("Buzz");
-}
 else
-{
 _putchar("%d", i);
-}
-if (i != 100)
-{
-_putchar(" ");
-}
 }
 _putchar("\n");
 return (0);
