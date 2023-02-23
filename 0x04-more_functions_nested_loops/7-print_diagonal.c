@@ -19,7 +19,8 @@ i--;
 _putchar('\\');
 _putchar('\n');
 c++;
-n--;}
+n--;
+}
 if (c < 1)
 _putchar('\n');
 }
