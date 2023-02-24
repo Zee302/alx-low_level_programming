@@ -1,7 +1,4 @@
-#ifndef MAIN_H
-#define MAIN_H
-#include <stdio.h>
-int _putchar(int c);
+int _putchar(char c);
 int _isupper(int c);
 int mul(int a, int b);
 int _isdigit(int c);
@@ -13,4 +10,3 @@ void print_diagonal(int n);
 void print_square(int size);
 int main(void)
 void print_triangle(int size);
-#endif
