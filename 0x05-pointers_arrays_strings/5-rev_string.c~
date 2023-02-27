@@ -1,0 +1,221 @@
+
+et_to_98.c
+
+
+#include "main.h"
+
+/**
+
+ * reset_to_98 - a function that takes a pointer to an int as parameter
+
+ * and updates the value it points to to 98
+
+ * @n: input
+
+ * Return: n
+
+ */
+
+void reset_to_98(int *n)
+
+{
+
+  *n = 98;
+
+}
+
+
+
+=============================================
+
+
+1-swap.c
+
+
+#include "main.h"
+
+  /**
+
+   * swap_int - swaps the values of two integers
+
+   * @a: integer to swap
+
+   * @b: integer to swap
+
+   */
+
+  void swap_int(int *a, int *b)
+
+  {
+
+   int m;
+
+
+   m = *a;
+
+   *a = *b;
+
+   *b = m;
+
+  }
+
+
+
+===============================================
+
+
+
+2-strlen.c
+
+
+#include "main.h"
+
+  /**
+
+   * _strlen - returns the length of a string
+
+   * @s: string
+
+   * Return: length
+
+   */
+
+  int _strlen(char *s)
+
+  {
+
+   int longi = 0;
+
+
+   while (*s != '\0')
+
+     {
+
+       longi++;
+
+       s++;
+
+     }
+
+
+   return (longi);
+
+  }
+
+
+
+=============================================
+
+
+3-puts.c
+
+
+#include "main.h"
+
+  /**
+
+   * _puts - prints a string, followed by a new line, to stdout
+
+   * @str: string to print
+
+   */
+
+  void _puts(char *str)
+
+  {
+
+   while (*str != '\0')
+
+     {
+
+      _putchar(*str++);
+
+     }
+
+   _putchar('\n');
+
+  }
+
+
+
+=============================================
+
+
+
+4-print_rev.c
+
+
+
+#include "main.h"
+
+  /**
+
+   * print_rev - imprime en reversa
+
+   * @s: string
+
+   * return: 0
+
+   */
+
+  void print_rev(char *s)
+
+  {
+
+   int longi = 0;
+
+   int o;
+
+
+   while (*s != '\0')
+
+     {
+
+       longi++;
+
+       s++;
+
+     }
+
+   s--;
+
+   for (o = longi; o > 0; o--)
+
+     {
+
+       _putchar(*s);
+
+       s--;
+
+     }
+
+
+   _putchar('\n');
+
+  }
+
+
+
+=============================================
+
+#include "main.h"
+/**
+* rev_string - Reverses a string
+* @s: Input string
+* Return: String in reverse
+*/
+void rev_string(char *s)
+{
+char rev = s[0];
+int counter = 0;
+int i;
+while (s[counter] != '\0')
+counter++;
+for (i = 0; i < counter; i++)
+{
+counter--;
+rev = s[i];
+s[i] = s[counter];
+s[counter] = rev;
+}
+}
