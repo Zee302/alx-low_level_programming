@@ -1,5 +1,5 @@
 #!/bin/bash
-ar rc libmy.a
+ar -t libmy.a
 0-isupper.o
 0-memset.o
 0-strcat.o
